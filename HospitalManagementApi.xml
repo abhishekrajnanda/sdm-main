@@ -1,0 +1,1368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HospitalManagementApi</name>
+    </assembly>
+    <members>
+        <member name="M:HospitalManagementApi.Controllers.BedCompositionController.CUDOperation(HospitalManagementApi.Models.BLayer.BlBedComposition)">
+            <summary>
+            CRUD for Bed Composition
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.BedCompositionController.GetBedCompositionDetail(System.Int64)">
+            <summary>
+            Get bed composition details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CashlessBenefitsController.CUDOperation(HospitalManagementApi.Models.BLayer.BlCashlessBenefits)">
+            <summary>
+            CRUD for CashLess Benefits
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CashlessBenefitsController.GetCashlessDetail(System.Int64)">
+            <summary>
+            Get cashless details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CategoryController.CUDCatOperation(HospitalManagementApi.Models.BLayer.BlMenuLabel)">
+            <summary>
+            Add Category Labels
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.State(BaseClass.LanguageSupported)">
+            <summary>
+            Get Indian State List, Default Language is Set to English (value 2)
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.District(System.Int32,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of District based on State value, Default Language is Set to English (value 2)
+            </summary>
+            <param name="sid"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.BaseDepartment(System.Int32,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of Base Departments of a State, Default Language is Set to English (value 2)
+            </summary>
+            <param name="sid"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.BaseDesignation(System.Int32,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of Base Designation of a State, Default Language is Set to English (value 2)
+            </summary>
+            <param name="sid"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.GetCommonListPublicAsync(System.String,BaseClass.LanguageSupported)">
+            <summary>
+            Get Common List based on Category
+            </summary>
+            <param name="category"></param>
+            <param name="language">Hindi = 1, English = 2</param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.GetSubCommonListPublicAsync(System.String,System.String,BaseClass.LanguageSupported)">
+            <summary>
+            Get Common List based on Category
+            </summary>
+            <param name="category"></param>
+            <param name="id"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.City(System.Int16,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of City based on District value, Default Language is Set to English (value 2)
+            </summary>
+            <param name="distId"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.GetCityByName(System.Int16,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of City based on State value, Default Language is Set to English (value 2)
+            </summary>
+            <param name="stateId"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.GetCommonListDs(System.String)">
+            <summary>
+            Get Common List based on Category
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.ResetPassword(HospitalManagementApi.Models.BLayer.ResetPassword)">
+            <summary>
+            Passwrod Reset
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.HomeSearch(HospitalManagementApi.Models.BLayer.HomeSearch)">
+            <summary>
+            Home Search
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.HomeSearchSub(HospitalManagementApi.Models.BLayer.HomeSearch,BaseClass.LanguageSupported)">
+            <summary>
+            Home Search
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.CommonController.EmailCheck(System.String)">
+            <summary>
+            Home Search
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveHospital(HospitalManagementApi.Models.BLayer.BlDoctor)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateDoctorAcademic(HospitalManagementApi.Models.BLayer.BlDoctorAcademic)">
+            <summary>
+            Save Update Doctor Academic
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateDoctorExperience(HospitalManagementApi.Models.BLayer.BlDoctorExperience)">
+            <summary>
+            Save Update Doctor Experience
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateDoctorWorkArea(HospitalManagementApi.Models.BLayer.BlDoctorWorkArea)">
+            <summary>
+            Save Update Doctor Experience
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetAllDoctorList(System.Int16)">
+             <summary>
+            Get All Doctor List
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.VerifyHospitalRegistration(HospitalManagementApi.Models.BLayer.VerificationDoctorDetail)">
+            <summary>
+            Verification of Doctor registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveDoctorProfilePartOne(HospitalManagementApi.Models.BLayer.DoctorProfilePart1)">
+            <summary>
+            Doctor Profile Setting Save Part 1
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateDoctorAward(HospitalManagementApi.Models.BLayer.DoctorAward)">
+            <summary>
+            Doctor Award
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateDoctorMCR(HospitalManagementApi.Models.BLayer.DoctorMCR)">
+            <summary>
+            Doctor MCR
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateMembership(HospitalManagementApi.Models.BLayer.DoctorMembership)">
+            <summary>
+            Doctor MCR
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateAddOns(HospitalManagementApi.Models.BLayer.DoctorAddOns)">
+            <summary>
+            Doctor AddOns 
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateIndaminity(HospitalManagementApi.Models.BLayer.DoctorIndaminity)">
+            <summary>
+            Doctor Indaminity 
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorInfoPart1(System.Int64)">
+             <summary>
+            Get Doctor Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorClinicInfo(System.Int64)">
+             <summary>
+            Get Doctor Clinic Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorEducationInfo(System.Int64)">
+             <summary>
+            Get Doctor Education Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorExperienceInfo(System.Int64)">
+             <summary>
+            Get Doctor Experience Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorAwardInfo(System.Int64)">
+             <summary>
+            Get Doctor Award Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorMembershipInfo(System.Int64)">
+             <summary>
+            Get Doctor Membership Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorAddons(System.Int64)">
+             <summary>
+            Get Doctor Add ons
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorIndaminity(System.Int64)">
+             <summary>
+            Get Doctor indaminity
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorRegistrationInfo(System.Int64)">
+             <summary>
+            Get Doctor Registration Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:HospitalManagementApi.Controllers.DoctorController.GetDoctorProfileLogo(System.Int64)" -->
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.SaveUpdateDoctorScheduleDateTime(HospitalManagementApi.Models.BLayer.DoctorScheduleDate)">
+            <summary>
+            Doctor Schedule Date Time
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorScheduleTimings(System.Int64,System.Int16)">
+             <summary>
+            Get Doctor Schedule by dayId
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.DeleteScheduleTime(System.Int32)">
+             <summary>
+            Delete Doctor Schedule Time by scheduleTimeId
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetVerifiedCounters">
+             <summary>
+            Get Counters of Verified Doctors and Patients
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorPatientLimList(System.Int16)">
+             <summary>
+            Get List of Verified Doctors and Patients Doctor  = 3 
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetAllDoctorInfo(System.Int64)">
+             <summary>
+            Get Doctor All Info
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.CheckDoctorDatewiseSchedule(System.Int64,System.Int32,System.Int16)">
+            <summary>
+            Check existance of Date on Doctor
+            </summary>
+            <param name="doctorRegNo"></param>        
+            <param name="month"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorDatewiseScheduleTime(System.Int64,System.Int32,System.Int16)">
+             <summary>
+            Get date wise timing
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.saveBulkSlotDatewise(HospitalManagementApi.Models.BLayer.DoctorScheduleDatewise)">
+            <summary>
+            Save Update Doctor Datetime Schedule
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.saveSingleSlotDatewise(HospitalManagementApi.Models.BLayer.DoctorScheduleDatewise)">
+            <summary>
+            Doctor Schedule Date Time
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.delSingleSlotDatewise(System.Int32)">
+             <summary>
+            Delete Doctor Schedule slot Datewise
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetAllDoctorListHome">
+             <summary>
+            Get All Doctor List HOME
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorSlots(System.Int64)">
+             <summary>
+            Patient Appointment timeslot from current date
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.AppointDoctor(HospitalManagementApi.Models.BLayer.BlDoctorAppointment)">
+            <summary>
+            Save Patient Booking
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetAllDoctorListHomeSpecialization(System.Int16)">
+             <summary>
+            Patient Appointment timeslot from current date
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.RollbackHospitalRegistration(HospitalManagementApi.Models.BLayer.VerificationDoctorDetail)">
+            <summary>
+            Verification of HOD registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.CUDDoctorOperation(HospitalManagementApi.Models.BLayer.BlDoctorSpecialization)">
+            <summary>
+            CRUD for Doctor Specialization
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorSpecDetail(System.Int64)">
+            <summary>
+            Get Doctor Specialization details 
+            </summary>
+            <param name="doctorRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorHomeList">
+             <summary>
+            Get Doctor Home Page List
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.GetDoctorScheduleTimingsCalender(System.Int64)">
+             <summary>
+            Get Doctor Schedule  
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.NotAvailableDoctor(HospitalManagementApi.Models.BLayer.BlDoctorAvailability)">
+             <summary>
+            
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.DoctorController.AvailableDoctor(HospitalManagementApi.Models.BLayer.BlDoctorAvailability)">
+            <summary>
+            
+            </summary>         
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.CUDOperation(HospitalManagementApi.Models.BLayer.BlEmpaneled)">
+            <summary>
+            CRUD for Empaneled
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.GetEmpaneledDetail(System.Int64,System.Int16)">
+            <summary>
+            Get empaneled details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <param name="empaneledTypeId"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.CUDDoctorOperation(HospitalManagementApi.Models.BLayer.BlDoctorEmpaneled)">
+            <summary>
+            CRUD for Empaneled
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.GetDoctorEmpaneledDetail(System.Int64,System.Int16)">
+            <summary>
+            Get empaneled details 
+            </summary>
+            <param name="doctorRegNo"></param>        
+            <param name="empaneledTypeId"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.CUDProviderEmpaneled(HospitalManagementApi.Models.BLayer.BlProviderEmpaneled)">
+            <summary>
+            CRUD for Provider Empaneled
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.GeProviderEmpaneledDetail(System.Int64,System.Int16,System.Int32)">
+            <summary>
+            Get provider empaneled details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <param name="empaneledTypeId"></param>        
+            <param name="empaneledId"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.CUDEmpInsOperation(HospitalManagementApi.Models.BLayer.BlEmpaneledIns)">
+            <summary>
+            CRUD for Empaneled
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.EmpaneledController.GetHospitalPreview(System.Int64,System.Int16)">
+            <summary>
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <param name="empaneledTypeId"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.SaveEmployee(HospitalManagementApi.Models.BLayer.BlEmployee)">
+             <summary>
+            Save Employee Record
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.UpdateEmployee(HospitalManagementApi.Models.BLayer.BlEmployee)">
+             <summary>
+            Save Employee Record
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetAllEmployeeList(System.Int64)">
+             <summary>
+            Get All HOD List
+             </summary>         
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetAllEmployeeById(System.Int64)">
+             <summary>
+            Get All HOD List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.SaveOffice(HospitalManagementApi.Models.BLayer.BlOffice)">
+             <summary>
+            Save Office Record
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.UpdateOffice(HospitalManagementApi.Models.BLayer.BlOffice)">
+             <summary>
+            Save Office Record
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetAllOfficeList(System.Int64)">
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetAllOfficeById(System.Int64)">
+             <summary>
+            Get All HOD List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.SaveEmployeeOffice(HospitalManagementApi.Models.BLayer.BlEmpOffice)">
+             <summary>
+            Save Employee Office Mapping
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.UpdateEmployeeOffice(HospitalManagementApi.Models.BLayer.BlEmpOffice)">
+             <summary>
+            Update Employee Office Mapping
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetAllEmpOfficeList(System.Int64)">
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetAllEmpOfficeById(System.Int32)">
+             <summary>
+            Get All HOD List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetEmloyeeByDistrict(System.Int64)">
+            <summary>
+            Get List of Employee based 
+            </summary>
+            <param name="hodOfficeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.Employee.GetOfficeByDistrict(System.Int64,System.Int16)">
+            <summary>
+            Get List of office based on district
+            </summary>
+            <param name="hodOfficeId"></param>
+            <param name="districtId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.FinancialInformationController.CUDOperation(HospitalManagementApi.Models.BLayer.BlFinancialInformation)">
+            <summary>
+            CRUD for Financial Information
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.FinancialInformationController.GetFinancialDetail(System.Int64)">
+            <summary>
+            Get financial details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.SaveHODRegistration(HospitalManagementApi.Models.BLayer.BlHod)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetAllHODList(System.Int16,System.Int16)">
+             <summary>
+            Get All HOD List
+             </summary>         
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetAllHODListById(System.Int64)">
+             <summary>
+            Get All HOD List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.VerifyHODRegistration(HospitalManagementApi.Models.BLayer.Verification)">
+            <summary>
+            Verification of HOD registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.SaveTicketType(HospitalManagementApi.Models.BLayer.BlTicketType)">
+             <summary>
+            Save Ticket Type
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.UpdateTicketType(HospitalManagementApi.Models.BLayer.BlTicketType)">
+             <summary>
+            Update Ticket Type
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetAllTicketTypeList(System.Int32)">
+             <summary>
+            Get All Ticket Type List
+             </summary>         
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetAllTicketTypeById(System.Int32)">
+             <summary>
+            Get All Ticket Type List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.SaveTicketCategory(HospitalManagementApi.Models.BLayer.BlCategory)">
+             <summary>
+            Save Ticket Category
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.UpdateTicketCategory(HospitalManagementApi.Models.BLayer.BlCategory)">
+             <summary>
+            Update Ticket Category
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetAllTicketCategoryList(System.Int64)">
+             <summary>
+            Get All Ticket Category List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetTicketCategoryById(System.Int32)">
+             <summary>
+            Get Ticket Category By Id
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.SaveTicketSubCategory(HospitalManagementApi.Models.BLayer.BlSubCategory)">
+             <summary>
+            Save Ticket Sub Category
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.UpdateTicketSubCategory(HospitalManagementApi.Models.BLayer.BlSubCategory)">
+             <summary>
+            Update Sub Category
+             </summary>
+             <param name="appParam"></param>        
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetAllSubCategory(System.Int32,System.Int32)">
+             <summary>
+            Get All Ticket Sub Category List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HodManagmentController.GetSubCategoryById(System.Int32)">
+             <summary>
+            Get Ticket Sub Category By Id
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.SaveHospital(HospitalManagementApi.Models.BLayer.BlHospital)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.updateHospital(HospitalManagementApi.Models.BLayer.BlHospital)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.GetAllHospital(System.Int16)">
+             <summary>
+            Get All HOD List
+             </summary>         
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.GethospitalById(System.Int64)">
+             <summary>
+            Get All HOD List
+             </summary> 
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.VerifyHospitalRegistration(HospitalManagementApi.Models.BLayer.VerificationDetail)">
+            <summary>
+            Verification of HOD registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.UpdateHospitalInfo(HospitalManagementApi.Models.BLayer.BlHospital)">
+            <summary>
+            Update hospital Info - registration 
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.SearchHS(HospitalManagementApi.Models.BLayer.Filter)">
+            <summary>
+            Search By Hospital Name OR Specialization
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.GetHospitalProfile(System.Int64)">
+            <summary>
+            Get Hospital profile, NACH , license and Other documents
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.SaveUpdateHospitalMI(HospitalManagementApi.Models.BLayer.BlHospitalMI)">
+            <summary>
+            Save/Update hospital Main Contact,Info,Rohini 
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.GetHospitalInfoMI(System.Int64)">
+            <summary>
+            Get Hospital profile Info
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.SaveWorkProgressBacklogDocumentsAsync(HospitalManagementApi.Models.BLayer.HospitalDocs)">
+            <summary>
+            Upload 
+            </summary>
+            <param name="bl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.GetHospitalInfoMIDoc(System.Int64)">
+            <summary>
+            Get Hospital profile Info Docs
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:HospitalManagementApi.Controllers.HospitalController.GetHospitalProfileLogo(System.Int64)" -->
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.GetHospitalPreview(System.Int64)">
+            <summary>
+            Get Hospital Preview
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalController.RollbackHospitalRegistration(HospitalManagementApi.Models.BLayer.VerificationDetail)">
+            <summary>
+            Verification of HOD registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalFacilityController.CUDOperation(HospitalManagementApi.Models.BLayer.BlHospitalFacility)">
+            <summary>
+            CRUD for Hospital Facility 
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalFacilityController.GetHospitalFacilityDetail(System.Int64)">
+            <summary>
+            Get Infrastructure details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalSpecializationController.CUDOperation(HospitalManagementApi.Models.BLayer.BlHospitalSpecialization)">
+            <summary>
+            CRUD for Specialization
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.HospitalSpecializationController.GetHospitalSpecDetail(System.Int64)">
+            <summary>
+            Get Hosptal Specialization details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.InfrastructureController.CUDOperation(HospitalManagementApi.Models.BLayer.BlInfrastructure)">
+            <summary>
+            CRUD for Infrastructure
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.InfrastructureController.GetInfrastructureDetail(System.Int64)">
+            <summary>
+            Get Infrastructure details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.MainContactController.CUDOperation(HospitalManagementApi.Models.BLayer.BlMainContact)">
+            <summary>
+            CRUD for Main Contact
+            </summary>
+            <param name="bl"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.MainContactController.GetMainContactDetail(System.Int64)">
+            <summary>
+            Get Infrastructure details 
+            </summary>
+            <param name="hospitalRegNo"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.SavePatient(HospitalManagementApi.Models.BLayer.BlPatient)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.OTPVerify(HospitalManagementApi.Models.BLayer.BlPatientOtp)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.SetPassword(HospitalManagementApi.Models.BLayer.BlPatientOtp)">
+            <summary>
+            Insert service registration application
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.GetPatientSlotsHistory(System.Int64)">
+             <summary>
+            Get Patient history
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.GetAppointmentCalender(System.Int64)">
+             <summary>
+            Get Patient
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.AddWallet(HospitalManagementApi.Models.BLayer.BlAddWallet)">
+            <summary>
+            Submit Appointment
+            </summary>
+            <param name="appParam"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.checkWalletBalance">
+             <summary>
+            Get check wallet balance
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.PatientController.checkWalletHistory">
+             <summary>
+            Get check wallet history
+             </summary>         
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            Testing Comments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HospitalManagementApi.Models.BLayer.BlCommon.smsvalidity">
+            <summary>
+            Validity in Minutes
+            </summary>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCategory.CUDCatOperation(HospitalManagementApi.Models.BLayer.BlMenuLabel)">
+            <summary>
+            add labels in menu list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCategory.GetMenu">
+            <summary>
+            Get List of Menu
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetDistrictAsync(System.Int32,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of District
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetCommonListAsync(System.String,BaseClass.LanguageSupported)">
+             <summary>
+            Get Category List from ddlCat
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetSubCommonListAsync(System.String,System.String,BaseClass.LanguageSupported)">
+             <summary>
+            Get Sub category List from ddlCat
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetCommonListStateAsync(System.String,BaseClass.LanguageSupported,System.Int32)">
+             <summary>
+            Get State Specific Category List from ddlCat
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.VerifyCaptcha(HospitalManagementApi.Models.Balayer.CaptchaReturnType,System.String)">
+            <summary>
+            Verify captcha 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.InsertLoginTrail(HospitalManagementApi.Models.Balayer.LoginTrail)">
+            <summary>
+            insert an entry for each login attempt regardless of successfull login or failure.
+            </summary>
+            <param name="lt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetUser(System.String,System.String,System.Boolean)">
+             <summary>
+            get User Detail During Login
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetCity(System.Int16,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of District
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetCityByName(System.Int16,BaseClass.LanguageSupported)">
+            <summary>
+            Get List of City by District
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetCommonListDs(System.String)">
+             <summary>
+            Get Category List from ddlCat
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetUserByEmail(System.String)">
+             <summary>
+            get User Email-Id
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetUserByMobile(System.String)">
+             <summary>
+            get User Mobile Nomber Exists
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.SendSmsSaveAsync(HospitalManagementApi.Models.BLayer.AlertMessageBody)">
+            <summary>
+            Save Sent SMS Details
+            </summary>
+            <param name="sb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GetOTPMsgForResend(System.String)">
+            <summary>
+            Resend OTP 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.VerifySMSMsgId(System.String)">
+            <summary>
+            check ssms MsgId
+            </summary>
+            <param name="msgId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.SendOTP(HospitalManagementApi.Models.BLayer.SendOtp)">
+            <summary>
+            Send OTP 
+            </summary>
+            <param name="bl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.CheckSMSSendDuration(System.String,System.Int16)">
+            <summary>
+            
+            Retrive Last OTP by Mobile num only
+            </summary>
+            <returns>Verify OTP</returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.GenerateRequestToken">
+            <summary>
+            Method for creating random number for post request
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.VerifyPublicOTP(System.String,System.Int32,System.String)">
+            <summary>
+            
+            Verify Public Mobile OTP
+            </summary>
+            <returns>Verify OTP</returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlCommon.VerifyOTP(System.String,System.Int16,System.Int32,System.String)">
+            <summary>
+            Verify Email OTP
+            isEmailOrMobileOTP=1:MobileOTP, IF isEmailOrMobileOTP=2 : Email OTP
+            </summary>
+            <returns>Industrial User Registration Id</returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlEmployee.GetEmployeeId(System.Int32)">
+            <summary>
+            for EmployeeId generation 12 digit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlEmployee.GenerateEmpOfficemappingId">
+            <summary>
+            generates EmpOfficemappingId of 6 digits in format 2 NNNNN where 2 is prefix for EmpOfficemappingId.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlEmployee.GetEmpOfficemappingId">
+            <summary>
+            Get MAX EmpOfficemappingId.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlHod.GetHodOfficeRegistrationIdAsync(System.Int32)">
+            <summary>
+            Returns 11 digit HodOfficeCode based on StateCode
+            </summary>
+            <param name="hodOfficeStateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlHospital.GetHospitalId(System.Int32)">
+            <summary>
+            Returns 12 digit hospitalId id based on year
+            </summary>
+            <param name="registrationYear"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlHospital.GetHospitalId">
+            <summary>
+            Returns 12 digit hospitalId id Outer Hospitals
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HospitalManagementApi.Models.DaLayer.DlMasters.GetCityId(System.Int16)">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClass.DBConnection">
+            <summary>
+            Summary description for db_connection
+            </summary>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQuery(System.String)">
+            <summary>
+            Select query with default connection string without parameter
+            </summary>
+            <param name="_query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQueryAsync(System.String)">
+            <summary>
+            Async Select query with default connection string without parameter
+            </summary>
+            <param name="_query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQuery(System.String,BaseClass.DBConnectionList)">
+            <summary>
+            Select query with custom connection string without parameter
+            </summary>
+            <param name="_query"></param>
+            <param name="dbconname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQueryAsync(System.String,BaseClass.DBConnectionList)">
+            <summary>
+            Async Select query with custom connection string without parameter
+            </summary>
+            <param name="_query"></param>
+            <param name="dbconname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQuery(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Execute Select Query With Parameters
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQueryAsync(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            Async select query with parameter
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQuery(System.String,MySql.Data.MySqlClient.MySqlParameter[],BaseClass.DBConnectionList)">
+            <summary>
+            select query with parameter and custom connection string
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <param name="dbconname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteSelectQueryAsync(System.String,MySql.Data.MySqlClient.MySqlParameter[],BaseClass.DBConnectionList)">
+            <summary>
+            Async select Query with parameter and custom connection string
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <param name="dbconname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteQuery(System.String,MySql.Data.MySqlClient.MySqlParameter[],System.String)">
+            <summary>
+            Execute Sync Queries
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteQueryAsync(System.String,MySql.Data.MySqlClient.MySqlParameter[],System.String)">
+            <summary>
+            Execute Async Transactional Queries
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteQuery(System.String,MySql.Data.MySqlClient.MySqlParameter[],System.String,BaseClass.DBConnectionList)">
+            <summary>
+            Execute Transactional Queries With Custom DB Connection
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <param name="methodName"></param>
+            <param name="dbconname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.ExecuteQueryAsync(System.String,MySql.Data.MySqlClient.MySqlParameter[],System.String,BaseClass.DBConnectionList)">
+            <summary>
+            Execute Async Transactional Queries With Custom DB
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <param name="methodName"></param>
+            <param name="dbconname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.GetConnectionString(BaseClass.DBConnectionList)">
+            <summary>
+            Returns Connection String
+            </summary>
+            <param name="dbl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.executeSelectQueryForDataset_async(System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            SHAILESH - Async select query with parameter
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.DBConnection.executeSelectQueryForDataset_async(System.String)">
+            <summary>
+            SHAILESH - Async select query with parameter
+            </summary>
+            <param name="_query"></param>
+            <param name="sqlParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Helper.GetGenericDropdownList(System.Data.DataTable)">
+            <summary>
+            Get List Vale pair For Dropdowns and Radio
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseClass.ReturnClass">
+            <summary>
+            Summary description for ReturnClass
+            </summary>
+        </member>
+        <member name="T:BaseClass.Sms">
+            <summary>
+            Summary description for sms
+            </summary>
+        </member>
+        <member name="M:BaseClass.Sms.Send(System.Int64,BaseClass.SmsBody)">
+            <summary>
+            Send Asynchronoulsy SMS in English
+            </summary>
+            <param name="mobileNo">10 digit mobile number</param>
+            <param name="smsTemplateBody"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BaseClass.SmsBody.IsOtp">
+            <summary>
+            Default value is false
+            </summary>
+        </member>
+        <member name="P:BaseClass.SmsBody.IsUniCodeMessage">
+            <summary>
+            Default Value is False
+            </summary>
+        </member>
+        <member name="T:BaseClass.Utilities">
+            <summary>
+            Summary description for Utilities
+            </summary>
+        </member>
+        <member name="M:BaseClass.Utilities.Aes256Encrypt(System.String,System.String,System.String)">
+            <summary>
+            Encrypt String using AES 256 Algorithm based on CBC and Zero Padding
+            </summary>
+            <param name="plainText"></param>
+            <param name="encryptionKey"></param>
+            <param name="inVect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Utilities.Aes256Decrypt(System.String,System.String,System.String)">
+            <summary>
+            Decrypt Cipher Text using AES 256 Algorithm based on CBC and Zero Padding
+            </summary>
+            <param name="cipherText"></param>
+            <param name="encryptionKey"></param>
+            <param name="inVect"></param>
+            <returns>Plain Text</returns>
+        </member>
+        <member name="M:BaseClass.Utilities.CreateHash(System.String,BaseClass.HashingAlgorithmSupported)">
+            <summary>
+            Returns Hash of a input string
+            </summary>
+            <param name="input"></param>
+            <param name="hashAlgorithm"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:BaseClass.Utilities.GenerateSHA256FromString(System.String)">
+            <summary>
+            Generate Sha256 hash in lower hex format from input string
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Utilities.GenerateSHA512FromString(System.String)">
+            <summary>
+            Generate Sha512 hash in lower hex format from input string
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Utilities.GenerateMd5Hash(System.String)">
+            <summary>
+            Generates MD5 Hash in lower Hex for given string
+            </summary>
+        </member>
+        <member name="M:BaseClass.Utilities.GenPassLowercase(System.Int32)">
+            <summary>
+            This method is used to generate random lowercase password with given length
+            </summary>
+        </member>
+        <member name="M:BaseClass.Utilities.GenPassWithCap(System.Int32)">
+            <summary>
+            This method is used to generate random uppercase password with given length
+            </summary>
+        </member>
+        <member name="M:BaseClass.Utilities.GenRendomString(System.Int32)">
+            <summary>
+            This method is used to generate random string with given length
+            </summary>
+        </member>
+        <member name="M:BaseClass.Utilities.ConvertNumbertoWordsHindi(System.Int64)">
+            <summary>
+            Numbers to Word - Hindi
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Utilities.ConvertNumbertoEngish(System.Int64)">
+            <summary>
+            Number to Words - English
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Utilities.GetRemoteIPAddress(Microsoft.AspNetCore.Http.HttpContext,System.Boolean)">
+            <summary>
+            Get Client IP
+            </summary>
+            <param name="context"></param>
+            <param name="allowForwarded"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.Utilities.GetAppSettings(System.String,System.String)">
+            <summary>
+            Get Current Build from appsettings.json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaseClass.WriteLog.Error(System.String,System.Exception)">
+            <summary>
+            Writes error log on log.txt with method name
+            </summary>
+            <param name="sMethod_Name">Methodname in which error occurs</param>
+            <param name="e">Exception</param>
+        </member>
+        <member name="M:BaseClass.WriteLog.Error(System.String)">
+            <summary>
+            Write error msessage without method
+            </summary>
+            <param name="error"></param>
+        </member>
+        <member name="M:BaseClass.WriteLog.CustomLog(System.String,System.String)">
+            <summary>
+            Writes custom logs on user specified txt file name
+            </summary>
+            <param name="message"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="P:DmfPortalApi.Models.AppClass.BlDocumentNew.documentImageGroup">
+            <summary>
+            Refrenced for dpt_table_id 
+            </summary>
+        </member>
+    </members>
+</doc>
